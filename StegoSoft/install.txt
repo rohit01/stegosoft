@@ -1,0 +1,30 @@
+system Requirements (Dependencies):
+-----------------------------------
+Operating System:
+o   Any GNU/Linux OS viz. fedora, ubuntu, openSUSE
+Python 2.6 or higher with the following modules:
+o    PyQt4
+o    os
+o    sys
+o    python-crypto
+o    shutil
+Any Media Player (To test the audio files)
+Works only on 'wav' audio format
+
+
+Install instructions:
+---------------------
+1. Install the Dependencies.
+
+Note: The binary for fedora 11 is provided. If you have fedora 11, you can skip this step 2.
+2. Run the gcc command to compile the three programs in the "source code" folder and rename it as mentioned:
+	a. stegno_decrypt_header.c --- unhide.out
+	b. stegno_encrypt_header.c --- hide.out
+	c. stegno_extract_header.c --- extract.out
+Now place these three files (hide.out, unhide.out and extract.out) in 'Project_folder' directory.
+
+3. open a terminal and cd to the "Project Folder"
+
+4. run the application by typing:
+      python run_steg.py
+
